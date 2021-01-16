@@ -1,6 +1,6 @@
-package main.java.com.globant;
+package polymorphim;
 
-public class French implements Person {
+public class French implements IPerson {
 
     private String name;
 

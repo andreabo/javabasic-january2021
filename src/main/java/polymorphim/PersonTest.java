@@ -1,23 +1,22 @@
-package main.java.com.globant;
+package polymorphim;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
-
+public class PersonTest {
     public static void main(String[] args) {
-        List<Person> personList= new ArrayList<Person>();
+        List<IPerson> personList= new ArrayList<IPerson>();
         French french = new French("Pierre");
         Portuguese portuguese = new Portuguese("Marcelo");
         Japanese japanese = new Japanese("Goku");
-        Person felipe = new French("Felipe");
+        IPerson felipe = new French("Felipe");
 
         personList.add(french);
         personList.add(portuguese);
         personList.add(japanese);
         personList.add(felipe);
 
-        for(Person person : personList){
+        for(IPerson person : personList){
             System.out.println(person.getName() + " speaks in "+  person.speak());
         }
     }

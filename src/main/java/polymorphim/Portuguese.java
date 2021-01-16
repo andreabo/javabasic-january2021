@@ -1,6 +1,8 @@
-package main.java.com.globant;
+package polymorphim;
 
-public class Portuguese implements Person {
+import sun.jvm.hotspot.debugger.Address;
+
+public class Portuguese implements IPerson{
     private String name;
 
     public Portuguese(String name){
